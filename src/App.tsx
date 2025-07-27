@@ -18,8 +18,8 @@ const App = () => {
 
   return (
     <AppContainer>
-      <Typography variant="h3" component="h1" gutterBottom>
-        Karaoke App
+      <Typography variant="h4" component="h1" gutterBottom>
+        Караоке: помощь в обучении пению
       </Typography>
       <KaraokeSelector
         selectedSongId={selectedSong?.id || null}

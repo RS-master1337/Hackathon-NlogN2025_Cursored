@@ -143,15 +143,15 @@ const KaraokePlayer = ({ song }: KaraokePlayerProps) => {
         ))}
       </Box>
       <Box sx={{ mt: 2, display: 'flex', gap: 2, justifyContent: 'center' }}>
-        <button onClick={() => { setIsPlaying(true); setCurrentTime(0); }}>Start</button>
-        <button onClick={() => setIsPlaying(false)}>Pause</button>
+        <button onClick={() => { setIsPlaying(true); setCurrentTime(0); }}>Начать</button>
+        <button onClick={() => setIsPlaying(false)}>Пауза</button>
       </Box>
       <Typography variant="body2" sx={{ mt: 2 }}>
-        Pitch: {pitch ? pitch.toFixed(1) + ' Hz' : '—'} | Clarity: {clarity.toFixed(2)}
+        Высота: {pitch ? pitch.toFixed(1) + ' Hz' : '—'} | Точность: {clarity.toFixed(2)}
       </Typography>
       {currentNote && (
         <Typography variant="body2">
-          Target: {(currentNote.frequency * SEMITONE_DOWN).toFixed(1)} Hz
+          Цель: {(currentNote.frequency * SEMITONE_DOWN).toFixed(1)} Hz
         </Typography>
       )}
       <Typography variant="body2" color={hit ? 'success.main' : 'error.main'}>

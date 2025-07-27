@@ -9,7 +9,7 @@ interface KaraokeSelectorProps {
 const KaraokeSelector = ({ selectedSongId, onSelect }: KaraokeSelectorProps) => (
   <Paper sx={{ p: 2, mb: 2 }}>
     <Typography variant="h6" gutterBottom>
-      Select a Song
+      Выбор песни
     </Typography>
     <List>
       {SONGS.map((song) => (
